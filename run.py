@@ -5,6 +5,7 @@ import pandas as pd
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
