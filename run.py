@@ -44,7 +44,7 @@ def index():
     category_counts = df.sum(numeric_only=True)[1:] #exclude first (id) column
     category_names = df.columns[4:]
 
-    word_counts = list(df['message'].apply(lambda text : len(tokenize_kuma(text))))
+    #word_counts = list(df['message'].apply(lambda text : len(tokenize_kuma(text))))
 
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
@@ -83,7 +83,7 @@ def index():
                 }
             }
         },
-
+        '''
         #word count histogram
         {
             'data': [
@@ -102,6 +102,7 @@ def index():
                 }
             }
         }
+        '''
     ]
     
     # encode plotly graphs in JSON
